@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DeepNavigationApp">
-        <activity android:name=".DetailActivity">
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/activity_detail"
+            android:parentActivityName=".MainActivity">
+<!--            parentActivityName bisa memunculkan up button secara otomatis -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
